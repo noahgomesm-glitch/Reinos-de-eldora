@@ -1,2 +1,7 @@
-const config={type:Phaser.AUTO,parent:"game-container",width:960,height:640,backgroundColor:"#397d3d",scale:{mode:Phaser.Scale.FIT,autoCenter:Phaser.Scale.CENTER_BOTH,width:960,height:640},physics:{default:"arcade",arcade:{gravity:{x:0,y:0},debug:false}},input:{activePointers:3},scene:[BootScene,GameScene,UIScene]};
-window.addEventListener("load",()=>{if(typeof Phaser==="undefined"){document.getElementById("game-container").innerHTML='<p style="color:white;padding:20px">Não foi possível carregar o Phaser. Verifique a conexão e recarregue.</p>';return;}window.eldoriaGame=new Phaser.Game(config);});
+
+window.onerror = function (mensagem, arquivo, linha) {
+  document.getElementById("game-container").innerHTML =
+    '<div style="color:white;background:#301010;padding:20px;font:16px Arial">' +
+    '<h2>Erro no jogo</h2><p>' + mensagem +
+    '</p><p>Linha: ' + linha + '</p></div>';
+};
