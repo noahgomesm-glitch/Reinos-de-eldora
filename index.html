@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Reinos de Eldoria - RPG 2D</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    html, body, #game-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #101820;
+    }
+    body { font-family: Arial, sans-serif; }
+    canvas { display: block; touch-action: none; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game-container"></div>
+  <script src="gameEngine.js"></script>
+  <script src="bootScene.js"></script>
+  <script src="gameScene.js"></script>
+  <script src="uiScene.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
